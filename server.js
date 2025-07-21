@@ -21,7 +21,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:8185/'
+        url: 'https://justdemo.onrender.com'
       },
     ],
   },
