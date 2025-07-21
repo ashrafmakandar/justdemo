@@ -33,7 +33,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use("/api/",route);
 app.use("/main",authRoute);
-const PORT= process.env.PORT|8009;
+const PORT= process.env.PORT||8009;
 connect();
 app.get("/api",(req,res)=>{
     res.json({
