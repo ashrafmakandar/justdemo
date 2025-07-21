@@ -7,8 +7,10 @@ const connect= require("./config/db");
 const route= require('./route/ItemRoute');
 const authRoute= require('./route/AuthRoute');
 const app = express();
-app.use(express.json());
+const cors = require('cors');
 
+app.use(express.json());
+app.use(cors());
 const swaggerOptions = {
   definition: {
     openapi: '3.0.0',
@@ -19,7 +21,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:8185/',
+        url: 'http://localhost:8185/'
       },
     ],
   },
