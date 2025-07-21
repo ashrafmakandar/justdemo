@@ -1,6 +1,6 @@
 /**
  * @swagger
- * /register:
+ * /main/register:
  *   post:
  *     summary: Register a new user
  *     tags: [Auth]
@@ -25,7 +25,7 @@
 
 /**
  * @swagger
- * /login:
+ * /main/login:
  *   get:
  *     summary: Login a user
  *     tags: [Auth]
